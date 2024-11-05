@@ -1,10 +1,21 @@
 ### A simple AliCloud DNS update tool
 
-### Usage
+#### Usage
+
+##### Step 1
+
+set AliCloud AccessKey ID and AccessKey Secret in environment variables
+
+```bash
+export MY_ACCESS_KEY_ID=your_access_key_id
+export MY_ACCESS_KEY_SECRET=your_access_key_secret
+```
+
+##### Step 2
 
 ```bash
 ./ddns subdomain domain
-# ./ddns dev example.com #更新 dev.example.com 的解析记录为当前主机公网IP
+# ./ddns dev example.com #更新 dev.example.com 的解析记录为当前主机公网 IP
 # ./ddns dev example.com #Update DNS record of dev.example.com to current host's public IP
 ```
 
